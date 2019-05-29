@@ -25,4 +25,15 @@
       "email": "bisam@codingthesmartway.com"
     }
   ]
+  ,
+
+
+  "Products": [
+    {
+      "id": "1",
+      "product_name": "iPhone 5",
+      "manufacturer": "apple",
+      "product_description": "16gb, iPhone 5, red"
+    }
+  ]  
 }
