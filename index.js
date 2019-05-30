@@ -1,16 +1,4 @@
-// $(document).ready(function(){
-
-//     $.ajax({
-//         method: "GET",
-//         url: "http://localhost:4000/users",
-//       })
-//         .done(function( msg ) {
-//           alert( "Data Saved: " + msg );
-//         });
-      
-
-// });
-
+// get all products
 function allProducts(){
     var xhr = new XMLHttpRequest();
     xhr.open('GET', 'http://localhost:4000/users', true);
@@ -26,6 +14,7 @@ function allProducts(){
                 <div class="category category-available">Available</div>
               <img src="" alt="Audi-A4">
               <div class="card-flex-item ">
+                <div><small>`+users[i].first_name+`</small></div>
                 <div><small>`+users[i].first_name+`</small></div>
               </div>
               
