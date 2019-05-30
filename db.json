@@ -33,7 +33,7 @@
       "price": "N30,000",
       "quantity": "24",
       "product_description": "HP Stream 11 Intel Celeron Dual Core- 11.6Inches (32GB SSD,2GB RAM+32GB Flash,Mouse,USB Light For Keyboard) Windows 10- Ultra Slim",
-      "img_url": "https://www.jumia.com.ng/hp-stream-11-intel-celeron-dual-core-11.6inches-32gb-ssd2gb-ram32gb-flashmouseusb-light-for-keyboard-windows-10-ultra-slim-30470906.html"
+      "img_url": "https://ng.jumia.is/NC1p1H4NL0NqUci_srT63hGQUUs=/fit-in/500x500/filters:fill(white):sharpen(1,0,false):quality(100)/product/60/907403/1.jpg?1827"
     },
     {
       "id": 2,
@@ -85,7 +85,8 @@
       "manufacturer": "Porsche Design",
       "quantity": "13",
       "price": "899090",
-      "img_url": "https://ng.jumia.is/CFwTErdz_VKDpLt2MJw9DnPHVp0=/fit-in/680x680/filters:fill(white):sharpen(1,0,false):quality(100)/product/29/701423/6.jpg?3843      ",
+      "product_description": "Porsche Design Porsche Book One Intel Core I7 16GB RAM 512GB SSD Touch Bar",
+      "img_url": "https://ng.jumia.is/CFwTErdz_VKDpLt2MJw9DnPHVp0=/fit-in/680x680/filters:fill(white):sharpen(1,0,false):quality(100)/product/29/701423/6.jpg?3843",
       "id": 7
     }
 ]
