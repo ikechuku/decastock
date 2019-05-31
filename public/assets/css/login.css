@@ -54,8 +54,8 @@ display: block;
 margin-left: 10%; 
 }
 
-#signinForm label{
-    color: #f2f2f2;
+#loginForm label{
+    color: white;
     font-size: 14px;
     line-height: 16px;
     font-weight: 500;

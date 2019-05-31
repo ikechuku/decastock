@@ -1,29 +1,48 @@
 $(document).ready(function(){
 
-    $('#signupForm').submit(function(e){
-        e.preventDefault();
-        $.ajax({
-            url: "http://localhost:4000/users",
-            dataType: 'json',
-            type: 'post',
-            contentType: 'application/json',
-            data: JSON.stringify({
-              "first_name": $('#first_name').val(),
-              "last_name": $('#last_name').val(),
-              "email": $('#email').val(),
-              "password": $('#password').val(),
-              }),
+      //GET ALL PRODUCTS
 
-              
-            processData: false,
-            success: function(){
-              var user = $('#first_name').val()
-              alert("Account Created Successfully");
-              window.location.assign('http://localhost:4000/all-products.html?'+user)
-            },
-            error: function(errorThrown) {
-                console.log(errorThrown);
-            }  
-          });
-    })
+$('#loginForm').submit(function(e){
+    e.preventDefault();
+
+    $.ajax({
+    type:'GET',
+    url:"http://localhost:4000/users",
+    dataType:"json",
+    contentType:'application/json',
+    data:{
+       format:'json'
+    },
+    
+    success:function(data){
+
+        var email = $("#email").val();
+        var pwd = $("#password").val();
+
+        if (email == "admin@decastock.com" && pwd == "root"){
+            alert("Login in as Administrator");
+            window.location.assign("http://localhost:4000/admin")
+
+        }
+        else{
+            var products = data;
+            for(i in products){
+                if(email == i.email && pwd==i.password)    {
+                    alert("login successful");
+                }
+                else{
+                    alert("user does not exist. Please Signup")
+                }
+
+             }      
+        }
+
+  
+
+    },
+})
+
+})
+
+
 });
