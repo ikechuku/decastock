@@ -5,6 +5,10 @@ $(document).ready(function(){
 $('#loginForm').submit(function(e){
     e.preventDefault();
 
+    
+    var email = $("#email").val();
+    var password = $("#password").val();
+
     $.ajax({
     type:'GET',
     url:"http://localhost:4000/users",
@@ -16,28 +20,23 @@ $('#loginForm').submit(function(e){
     
     success:function(data){
 
-        var email = $("#email").val();
-        var pwd = $("#password").val();
-
-        if (email == "admin@decastock.com" && pwd == "root"){
-            alert("Login in as Administrator");
-            window.location.assign("http://localhost:4000/admin")
-
+        if(email == "admin@decastock.com" && password == "root"){
+            alert("Admistrator Login");
+            window.location.assign("http://localhost:4000/admin-dashboard.html");
+        }else{
+            var user = data.find(
+                element => element.email === email && element.password == password
+            );
+            if(user){
+                let saveUser = {id:user.id, name:user.first_name};
+                localStorage.setItem("user", JSON.stringify(saveUser));
+                alert("Login Successful");
+                window.location.assign("http://localhost:4000/all-products.html");
+            }
+            else{
+                alert("Incorrect Credentials.. Please SignUp")
+            }
         }
-        else{
-            var products = data;
-            for(i in products){
-                if(email == i.email && pwd==i.password)    {
-                    alert("login successful");
-                }
-                else{
-                    alert("user does not exist. Please Signup")
-                }
-
-             }      
-        }
-
-  
 
     },
 })
