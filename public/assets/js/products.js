@@ -71,18 +71,16 @@ $(document).ready(function(){
         `+data.product_description+`
       </p>
       <br>
-     <input id="delete" type="button" class="btn orange" >     
      <a href="update-product.html?`+productID+`"><input id="update" type="button" class="btn" value="Update"></a>          
+     <a href="delete-product.html?`+productID+`"><input id="delete" type="button" class="btn orange" value="Delete"></a>               
+       
      </article>
       `      
     $('#details').html(details);
     
   }
   });  
-  
 
-  
-  
 
   // UPDATE A PRODUCT 
   $('#update-form').submit(function(e){
@@ -103,7 +101,6 @@ $(document).ready(function(){
           }),
         processData: false,
         success: function(){
-          //   $('#response').html(JSON.stringify(data));
           alert("Product Updated Successfully");
           window.location.assign('http://localhost:4000/all-products.html')
         },
@@ -114,21 +111,3 @@ $(document).ready(function(){
   })
 
 });
-
-
-// DELETE A PRODUCT 
-$('#delete').click(function(){
-  $.ajax({
-    url:"http://localhost:4000/products/"+productID,
-    // dataType:"json",
-    // contentType:'application/json',
-    type:'DELETE',
-    // data:{
-    //    format: 'json'
-    // },
-
-    success:function(){
-    alert("deleted");
-  }
-  });  
-})

@@ -79,22 +79,6 @@
       "quantity": 45,
       "product_description": "Dell Inspiron 15- G5 5587 8th Gen Intel Core I7,128ssd+1tb,16gb,4gb Nvidia 1050Ti,WIN 10 Home--RED",
       "img_url": "https://ng.jumia.is/mQK3M5IrznvzkQC_hmcuqArOcuo=/fit-in/680x680/filters:fill(white):sharpen(1,0,false):quality(100)/product/67/127133/1.jpg?8445"
-    },
-    {
-      "product_name": "Porsche Book One ",
-      "manufacturer": "Porsche Design",
-      "quantity": "8",
-      "price": "533990",
-      "img_url": "https://ng.jumia.is/CFwTErdz_VKDpLt2MJw9DnPHVp0=/fit-in/680x680/filters:fill(white):sharpen(1,0,false):quality(100)/product/29/701423/6.jpg?3843",
-      "product_description": "A beautifully designed hybrid ultrabook. 16gb ram, 1tb SSD 2TB hdd, intel core i9, usb type c, nvidia 1050titan",
-      "id": 7
-    },
-    {
-      "manufacturer": "Apple 2",
-      "quantity": "23",
-      "price": "2332232",
-      "img_url": "https://ng.jumia.is/CFwTErdz_VKDpLt2MJw9DnPHVp0=/fit-in/680x680/filters:fill(white):sharpen(1,0,false):quality(100)/product/29/701423/6.jpg?3843",
-      "id": 8
     }
   ]
 }
