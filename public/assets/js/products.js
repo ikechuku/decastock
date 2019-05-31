@@ -47,7 +47,6 @@ $(document).ready(function(){
 
     success:function(data){
       
-      console.log(data);     
       var details = 
       `
       <article class="card">
@@ -72,28 +71,18 @@ $(document).ready(function(){
         `+data.product_description+`
       </p>
       <br>
-     <a href="update-product.html?`+productID+`"><input id="update" type="button" class="btn" value="Update"></a>     
-     <input type="button" id="delete" class="btn btn-orange" value="Delete">
+     <input id="delete" type="button" class="btn orange" >     
+     <a href="update-product.html?`+productID+`"><input id="update" type="button" class="btn" value="Update"></a>          
      </article>
       `      
     $('#details').html(details);
     
   }
-
   });  
   
+
   
-  $('#delete').click(function(){
-    
-    $.ajax({
-      url:"http://localhost:4000/products/"+productID,
-      type: 'DELETE',
-      success: function(result) {
-          alert("deleted successfully")
-          // window.location.assign('public\all-products.html')
-      }
-    });
-  });
+  
 
   // UPDATE A PRODUCT 
   $('#update-form').submit(function(e){
@@ -125,3 +114,21 @@ $(document).ready(function(){
   })
 
 });
+
+
+// DELETE A PRODUCT 
+$('#delete').click(function(){
+  $.ajax({
+    url:"http://localhost:4000/products/"+productID,
+    // dataType:"json",
+    // contentType:'application/json',
+    type:'DELETE',
+    // data:{
+    //    format: 'json'
+    // },
+
+    success:function(){
+    alert("deleted");
+  }
+  });  
+})
