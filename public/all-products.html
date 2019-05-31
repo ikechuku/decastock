@@ -13,24 +13,22 @@
 </head>
 
 <body>
-  <header id="fixed">
-    <div class="container">
-        <div id="branding">
-            <img class="logo" src="./assets/img/1.png" alt="">
-            <h1>Deca<span class="highlight">stock</span> </h1>
+  <header>
+        
+    <ul>
+        <div class="links">
+          <li class="dashboard-items"><a href="user-dashboard.html">Home</a></li>            
+          <li class="dashboard-items"><a href="add-car.html">Add New Product</a></li>
+          <li class="dashboard-items current"><a href="./allcars.html">View All Products</a></li>
         </div>
-        <nav>
-            <ul>                      
-                <li class=""><a href="index.html">logout</a></li>
- 
-            </ul>
-        </nav>
-    </div>
+        
+       
+    </ul>
 </header>
   <!-- Featured Cars -->
   <section id="featured-cars" class="py-2">
     <div class="container">
-      <h2>My <span class="highlight">Products</span></h2>
+      <h2>Welcome  <span class="highlight" id="user"></span></h2>
       <div class="articles-container" id="all-products">
           <!-- populated by js -->
       </div>

@@ -4,25 +4,15 @@
       "id": 1,
       "first_name": "Sebastian",
       "last_name": "Eschweiler",
-      "email": "sebastian@codingthesmartway.com"
+      "email": "sebastian@codingthesmartway.com",
+      "password": "pass"
     },
     {
-      "id": 2,
-      "first_name": "Steve",
-      "last_name": "Palmer",
-      "email": "steve@codingthesmartway.com"
-    },
-    {
-      "id": 3,
-      "first_name": "Ann",
-      "last_name": "Smith",
-      "email": "ann@codingthesmartway.com"
-    },
-    {
-      "id": 4,
-      "first_name": "Ik",
-      "last_name": "Sam",
-      "email": "bisam@codingthesmartway.com"
+      "first_name": "Ukpa",
+      "last_name": "Ikechukwu",
+      "email": "sir_ik@yahoo.com",
+      "password": "a",
+      "id": 2
     }
   ],
   "Products": [

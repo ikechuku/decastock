@@ -18,7 +18,7 @@ $(document).ready(function(){
             processData: false,
             success: function(){
               //   $('#response').html(JSON.stringify(data));
-              alert("PRODUCT ADDED SUCCESFULY");
+              alert("Product Added Successfully");
               window.location.assign('http://localhost:4000/all-products.html')
             },
             error: function(errorThrown) {

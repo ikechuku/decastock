@@ -29,7 +29,10 @@ $(document).ready(function(){
                 <a href="product.html?`+products[i].id+`"><input type="button" class="btn" value="Details"></a>
               </article>`
               }
-          $("#all-products").html(output);                         
+          $("#all-products").html(output);
+          var user = location.search.substring(1);       
+          $("#user").html(user);
+
       },
   })
 

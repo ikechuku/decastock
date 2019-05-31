@@ -26,8 +26,11 @@
                     </div>
                     <form id= "signupForm" action="" method="POST">
                         
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
+                            <label for="name">First Name</label>
+                            <input type="text" id="first_name" name="name" required>
+
+                            <label for="name">Last Name</label>
+                            <input type="text" id="last_name" name="name" required>
                                     
                             <label for="email">Email</label>
                             <input type="email" id="email" name="email" required>
@@ -36,7 +39,7 @@
                             <input type="password" id="password" required>
                             
                             <label for="password">Confirm Password</label>
-                            <input type="password" id="passwordc" required>
+                            <input type="password" id="cpassword" required>
                                                     
                         <div class="box">
                             <input type="checkbox" name="checkbox" id="" value="checkbox">
@@ -44,7 +47,7 @@
                            
                         </div>
                         
-                        <input type="submit" id="submit" class="btn" value="Create an Account">
+                        <input type="submit" id="signup" class="btn" value="Create an Account">
                       
                         
                     </form>
@@ -63,7 +66,8 @@
        
     </footer>       
    
-
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/sign_up.js"></script>
 
 
 </body>

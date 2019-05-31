@@ -6,8 +6,9 @@ $(document).ready(function(){
       url:"http://localhost:4000/products/"+productID,
       dataType:"json",
       type:'DELETE',     
-      success:function(data){
-      console.log(data+ "Successfully deleted");  
+      success:function(){
+        alert("Product Deleted")
+       window.location.assign('http://localhost:4000/all-products.html');
     }
     }); 
 });

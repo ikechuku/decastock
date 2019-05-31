@@ -1,25 +1,25 @@
 $(document).ready(function(){
 
-    $('#ad-form').submit(function(e){
+    $('#signupForm').submit(function(e){
         e.preventDefault();
         $.ajax({
-            url: "http://localhost:4000/products",
+            url: "http://localhost:4000/users",
             dataType: 'json',
             type: 'post',
             contentType: 'application/json',
             data: JSON.stringify({
-              "product_name": $('#product_name').val(),
-              "manufacturer": $('#manufacturer').val(),
-              "quantity": $('#quantity').val(),
-              "price": $('#price').val(),
-              "img_url": $('#img_url').val(),
-              "product_description": $('#product_description').val()  
+              "first_name": $('#first_name').val(),
+              "last_name": $('#last_name').val(),
+              "email": $('#email').val(),
+              "password": $('#password').val(),
               }),
+
+              
             processData: false,
             success: function(){
-              //   $('#response').html(JSON.stringify(data));
-              alert("PRODUCT ADDED SUCCESFULY");
-              window.location.assign('http://localhost:4000/all-products.html')
+              var user = $('#first_name').val()
+              alert("Account Created Successfully");
+              window.location.assign('http://localhost:4000/all-products.html?'+user)
             },
             error: function(errorThrown) {
                 console.log(errorThrown);
