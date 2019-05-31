@@ -40,7 +40,7 @@ position: relative;
 display: block;
 }
 
-#ad-form label{
+form label{
     color: var(--grey);
     font-size: 14px;
     line-height: 16px;

@@ -30,8 +30,8 @@
       "id": 1,
       "product_name": "HP Stream 11",
       "manufacturer": "HP",
-      "price": "N30,000",
-      "quantity": "24",
+      "price": "230,000",
+      "quantity": 32,
       "product_description": "HP Stream 11 Intel Celeron Dual Core- 11.6Inches (32GB SSD,2GB RAM+32GB Flash,Mouse,USB Light For Keyboard) Windows 10- Ultra Slim",
       "img_url": "https://ng.jumia.is/NC1p1H4NL0NqUci_srT63hGQUUs=/fit-in/500x500/filters:fill(white):sharpen(1,0,false):quality(100)/product/60/907403/1.jpg?1827"
     },
@@ -39,8 +39,8 @@
       "id": 2,
       "product_name": "Microsoft Surface Book 2",
       "manufacturer": "Microsoft",
-      "price": "N30,000",
-      "quantity": "16",
+      "price": "330,000",
+      "quantity": 23,
       "product_description": "Microsoft Surface Book 2 13inches Intel Core I7 512GB 16GB 2GB Nvidia 1050 Win 10 Pro",
       "img_url": "https://ng.jumia.is/M9CKlJDfd-lzsloqGvbRieNYM3g=/fit-in/680x680/filters:fill(white):sharpen(1,0,false):quality(100)/product/10/822652/1.jpg?5685"
     },
@@ -48,8 +48,8 @@
       "id": 3,
       "product_name": "MacBook Pro 2018",
       "manufacturer": "Apple",
-      "price": "N30,000",
-      "quantity": "17",
+      "price": "530,000",
+      "quantity": 23,
       "product_description": "Apple MacBook Pro 15.4 Inches With Touch Bar, Intel Core I9, 32GB RAM, 1TB SSD",
       "img_url": "https://ng.jumia.is/RpD4o1FMmazv9A8E55aRFKpDnFM=/fit-in/680x680/filters:fill(white):sharpen(1,0,false):quality(100)/product/01/924732/2.jpg?4184"
     },
@@ -57,8 +57,8 @@
       "id": 4,
       "product_name": "Pavilion 15-CX0056WM",
       "manufacturer": "HP",
-      "price": "N30,000",
-      "quantity": "",
+      "price": "310,000",
+      "quantity": 65,
       "product_description": "HP Pavilion 15-CX0056WM 15.6″ Gaming Laptop (Intel I5-8300H, Nvidia GTX 1050Ti, 1TB HDD, 8GB RAM)",
       "img_url": "https://ng.jumia.is/vWktbLZkfm-CXiXUCgJrEBJ0OoY=/fit-in/680x680/filters:fill(white):sharpen(1,0,false):quality(100)/product/29/388762/2.jpg?0113"
     },
@@ -66,8 +66,8 @@
       "id": 5,
       "product_name": "ZenBook 13 UX331UAL-EG057T",
       "manufacturer": "ASUS",
-      "price": "N505,990",
-      "quantity": "23",
+      "price": "505,990",
+      "quantity": 45,
       "product_description": "ASUS ZenBook 13 UX331UAL-EG057T Intel® Core™ I7-8550U Processor 1.8GHz (8GB DDR3 1TB SSD) 13.3 inches FHD Fingerprint Windows 10 Laptop - Deep Dive Blue",
       "img_url": "https://ng.jumia.is/8_j3XcsdWOKYuewn7-8f-CQ9Au8=/fit-in/680x680/filters:fill(white):sharpen(1,0,false):quality(100)/product/45/946782/1.jpg?1389"
     },
@@ -75,19 +75,26 @@
       "id": 6,
       "product_name": "Inspiron 15 G5-5587",
       "manufacturer": "DELL",
-      "price": "N530,600",
-      "quantity": "12",
+      "price": "530,600",
+      "quantity": 45,
       "product_description": "Dell Inspiron 15- G5 5587 8th Gen Intel Core I7,128ssd+1tb,16gb,4gb Nvidia 1050Ti,WIN 10 Home--RED",
       "img_url": "https://ng.jumia.is/mQK3M5IrznvzkQC_hmcuqArOcuo=/fit-in/680x680/filters:fill(white):sharpen(1,0,false):quality(100)/product/67/127133/1.jpg?8445"
     },
     {
-      "name": "Porsche Book One ",
+      "product_name": "Porsche Book One ",
       "manufacturer": "Porsche Design",
-      "quantity": "13",
-      "price": "899090",
-      "product_description": "Porsche Design Porsche Book One Intel Core I7 16GB RAM 512GB SSD Touch Bar",
+      "quantity": "8",
+      "price": "533990",
       "img_url": "https://ng.jumia.is/CFwTErdz_VKDpLt2MJw9DnPHVp0=/fit-in/680x680/filters:fill(white):sharpen(1,0,false):quality(100)/product/29/701423/6.jpg?3843",
+      "product_description": "A beautifully designed hybrid ultrabook. 16gb ram, 1tb SSD 2TB hdd, intel core i9, usb type c, nvidia 1050titan",
       "id": 7
+    },
+    {
+      "manufacturer": "Apple 2",
+      "quantity": "23",
+      "price": "2332232",
+      "img_url": "https://ng.jumia.is/CFwTErdz_VKDpLt2MJw9DnPHVp0=/fit-in/680x680/filters:fill(white):sharpen(1,0,false):quality(100)/product/29/701423/6.jpg?3843",
+      "id": 8
     }
-]
+  ]
 }

@@ -8,11 +8,12 @@ $(document).ready(function(){
             type: 'post',
             contentType: 'application/json',
             data: JSON.stringify({
-                "name": $('#name').val(),
-                "manufacturer": $('#manufacturer').val(),
-                "quantity": $('#quantity').val(),
-                "price": $('#price').val(),
-                "img_url": $('#img_url').val()
+              "product_name": $('#product_name').val(),
+              "manufacturer": $('#manufacturer').val(),
+              "quantity": $('#quantity').val(),
+              "price": $('#price').val(),
+              "img_url": $('#img_url').val(),
+              "product_description": $('#product_description').val()  
               }),
             processData: false,
             success: function(){
