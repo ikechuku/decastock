@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="ikechuku ">
-    <title>Decasoft | Login</title>
+    <title>Decastock Login</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/login.css">
     <link href="https://fonts.googleapis.com/css?family=Gugi|Macondo+Swash+Caps|Stylish" rel="stylesheet">
@@ -21,7 +21,7 @@
                 <div class="wrapper">
                     <div class="logo">
                     <h1>Log <span class="highlight">in</span> </h1>
-                        
+
                     </div>
                     <form id= "loginForm" action="" method="POST">
                     <div>
@@ -39,30 +39,30 @@
                         <div>
                             <label for="password">Password</label>
                             <input type="password" id="password" required>
+  <a class="a-link" href="./all-products.html"><input type="submit" class="btn" value="Sign In"></a>
 
-                            <input type="submit" class="btn" value="Sign In">
                         </div>
                     </form>
 
                     <div class="links">
                         <a class="a-link" href="#"><p> Forgot password? </p></a>
                     </div>
-                  
+
                     <a href="signup.html"><input type="submit" class="btn" value="Create an Account"></a>
 
                 </div>
             </div>
             <footer id="footer">
-                     All rights reserved |                 
+                     All rights reserved |
                         <a class="link" href="">Terms of Use </a>|
                         <a class="link" href="">Privacy Policy</a>
-                    
+
                 </footer>
-            
+
         </div>
         <div id="right">
-            
-                
+
+
             <!-- <h1>buy or sell a product in <span class="highlight">3 easy</span> steps</h1> -->
 
             <!-- <input type="button" class="btn " value="Create an Account"> -->
@@ -73,7 +73,7 @@
             <img src="assets/img/great.jpeg" alt="image of car" class = "slider">
         </div>
     </div>
-   
+
 
 
 
@@ -84,14 +84,14 @@
         const homeSlideshow = () => {
             let slides = document.getElementsByClassName('slider');
             for (let i = 0; i < slides.length; i++) {
-                slides[i].style.display = 'none'; 
+                slides[i].style.display = 'none';
             }
             slideIndex++;
             if (slideIndex > slides.length) {slideIndex = 1}
-            slides[slideIndex-1].style.display = 'block'; 
+            slides[slideIndex-1].style.display = 'block';
             setTimeout(homeSlideshow, 5000); // Change image every 5 seconds
         };
-        
+
         homeSlideshow();
 </script>
 <script src="./assets/js/jquery.min.js"></script>
