@@ -1,4 +1,4 @@
-# inventory-management-system
+# Decastock (inventory-management-system)
 a product inventory management system designed for businesses to easily manage their inventory from anywhere around the world
 
 ## Features
