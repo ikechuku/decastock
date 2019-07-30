@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="ikechuku ">
-    <title>Decasoft | Login</title>
+    <title>PM global | Login</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/login.css">
     <link href="https://fonts.googleapis.com/css?family=Gugi|Macondo+Swash+Caps|Stylish" rel="stylesheet">
@@ -20,79 +20,70 @@
             <div class="signin">
                 <div class="wrapper">
                     <div class="logo">
-                    <h1>Log <span class="highlight">in</span> </h1>
-                        
+                        <h1>Log <span class="highlight">in</span> </h1>
+
                     </div>
-                    <form id= "loginForm" action="" method="POST">
-                    <div>
-                            <label for="text">Account Type</label>
-                            <select class="custom-select" name="products">
-                                    <option  disabled>--select account type--</option>
-                                    <option value="seller">standard User</option>
-                                    <option value="admin">Admin</option>
-                            </select>
-                        </div>
+                    <form id="loginForm" action="" method="POST">
                         <div>
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
+                            <label for="username">Username</label>
+                            <input type="username" id="username" name="username" required>
                         </div>
                         <div>
                             <label for="password">Password</label>
                             <input type="password" id="password" required>
 
-                            <input type="submit" class="btn" value="Sign In">
+                            <input type="submit" class="btn orange" value="Sign In">
                         </div>
                     </form>
 
                     <div class="links">
-                        <a class="a-link" href="#"><p> Forgot password? </p></a>
+                        <a class="a-link" href="#">
+                            <p> Forgot password? </p>
+                        </a>
                     </div>
-                  
-                    <a href="signup.html"><input type="submit" class="btn" value="Create an Account"></a>
+
+                    <!-- <a href="signup.html"><input type="submit" class="btn" value="Create an Account"></a> -->
 
                 </div>
             </div>
-            <footer id="footer">
-                     All rights reserved |                 
-                        <a class="link" href="">Terms of Use </a>|
-                        <a class="link" href="">Privacy Policy</a>
-                    
-                </footer>
-            
+
+
         </div>
         <div id="right">
-            
-                
+
+
             <!-- <h1>buy or sell a product in <span class="highlight">3 easy</span> steps</h1> -->
 
             <!-- <input type="button" class="btn " value="Create an Account"> -->
-            <img src="assets/img/dell.jpeg" alt="image of car" class = "slider">
-            <img src="assets/img/mac.jpeg" alt="image of car" class = "slider">
-            <img src="assets/img/cons.jpeg" alt="image of car" class = "slider">
-            <img src="assets/img/bw.jpg" alt="image of car" class = "slider">
-            <img src="assets/img/great.jpeg" alt="image of car" class = "slider">
+            <img src="assets/img/dell.jpeg" alt="image of car" class="slider">
+            <img src="assets/img/mac.jpeg" alt="image of car" class="slider">
+            <img src="assets/img/cons.jpeg" alt="image of car" class="slider">
+            <img src="assets/img/bw.jpg" alt="image of car" class="slider">
+            <img src="assets/img/great.jpeg" alt="image of car" class="slider">
         </div>
     </div>
-   
+
 
 
 
 </body>
 <script>
-        let slideIndex = 0;
+    let slideIndex = 0;
 
-        const homeSlideshow = () => {
-            let slides = document.getElementsByClassName('slider');
-            for (let i = 0; i < slides.length; i++) {
-                slides[i].style.display = 'none'; 
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {slideIndex = 1}
-            slides[slideIndex-1].style.display = 'block'; 
-            setTimeout(homeSlideshow, 5000); // Change image every 5 seconds
-        };
-        
-        homeSlideshow();
+    const homeSlideshow = () => {
+        let slides = document.getElementsByClassName('slider');
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = 'none';
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
+        slides[slideIndex - 1].style.display = 'block';
+        setTimeout(homeSlideshow, 5000); // Change image every 5 seconds
+    };
+
+    homeSlideshow();
 </script>
 <script src="./assets/js/jquery.min.js"></script>
 <script src="./assets/js/login.js"></script>

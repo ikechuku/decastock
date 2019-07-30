@@ -6,7 +6,7 @@
     <meta name="author" content="Chuku Omoke">
     <meta name="description" content="Admin can perform CRUD operations on this page">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decastock|admin Dashboard</title>
+    <title>PM global|Assessment Dashboard</title>
     <link href="./assets/css/dashboard.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -16,55 +16,34 @@
 
 <body>
     <header>
-        
-            <ul>
-                <div class="links">
+
+        <ul>
+            <div class="links">
                 <li class="dashboard-items"><a href="index.html">Home</a></li>
-                <li class="dashboard-items current"><a href="./new-product.html">Add new Product</a></li>                
-                <li class="dashboard-items"><a href="./all-products.html">View All Products</a></li>
-                </div>
-                
-               
-            </ul>
+                <li class="dashboard-items current"><a href="./new-user.html">Add new User</a></li>
+                <li class="dashboard-items"><a href="./all-users.html">View All User</a></li>
+            </div>
+        </ul>
     </header>
     <main>
         <section class="admin-dashboard">
             <h2> Dashboard | Admin</h2>
-            <div class="overview">
-
-                <div class="overview-item">
-                    <p id="user-total" class="stats-total">250&nbsp;<span id="user-total-span" class="stats-title"><br>
-                            Products</span></p>
-                </div>
-
-                <div class="overview-item">
-                    <p id="loan-total" class="stats-total">50&nbsp;<span id="loan-total-span" class="stats-title"><br>
-                        Users</span></p>
-                </div>
-
-                <div class="overview-item">
-                    <p id="total-paid" class="stats-total">80&nbsp;<span id="total-paid-span" class="stats-title"><br>Total Inventory</span></p>
-                    
-                </div>
-
-               
-            </div>
 
             <div class="user-verification">
                 <div class="view-title-div">
-                    <h3 id="view-title">My Sale Ads</h3>
+                    <h3 id="view-title">All Users</h3>
                     <!-- <button id="view-view-all" type="button">Grid view </button> -->
                 </div>
                 <table class="user-view">
                     <thead>
                         <tr>
-                            <th>Ad ID</th>
-                            <th>Img</th>
-                            <th>Name</th>
-                            <th>Quantity</th>
-                            <th>Description</th>
-                            <th>Price</th>
-                            <th>Action</th>
+                            <th></th>
+                            <th>FirstName</th>
+                            <th>LastName</th>
+                            <th>Gender</th>
+                            <th>Date of Birth</th>
+                            <th>Date Created</th>
+                            <th>Last Updated</th>
                         </tr>
                     </thead>
                     <tbody class="user-view-list">
@@ -77,13 +56,15 @@
         <section class="admin-dashboard">
             <div class="section-two">
                 <div class="stats-card-1">
-                    <p id="loan-approved" class="stats-total">36&nbsp;<span id="loan-total-span" class="stats-title">Cars<br>
-                            Sold</span></p>
+                    <p id="loan-approved" class="stats-total">36&nbsp;<span id="loan-total-span"
+                            class="stats-title">total<br>
+                            Users</span></p>
                 </div>
-                <div class="stats-card-2">
-                    <p id="loan-denied" class="stats-total">70&nbsp;<span id="loan-total-span" class="stats-title">Purchase<br>
+                <!-- <div class="stats-card-2">
+                    <p id="loan-denied" class="stats-total">70&nbsp;<span id="loan-total-span"
+                            class="stats-title">Purchase<br>
                             Orders</span></p>
-                </div>
+                </div> -->
             </div>
         </section>
     </main>
